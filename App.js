@@ -6,10 +6,10 @@ import {
   ActivityIndicator,
 } from 'react-native';
 
-
 import Search from './src/Components/Search';
 import Listing from './src/Components/Listing';
-import searchMock from './src/api/searchMock';
+import token from './src/api/token';
+import search from './src/api/search';
 
 const PAGE = 20;
 
@@ -22,19 +22,30 @@ export default class App extends React.Component {
       offset: 0,
       query: 'Shpongle',
       isFetching: false,
+      token: null,
+      isTokenFetching: false,
     };
   }
 
   async loadNextPage() {
-    const { songs, offset, query } = this.state;
+    const { songs, offset, query, token, isFetching } = this.state;
+
+    if (isFetching) {
+      return;
+    }
 
     this.setState({ isFetching: true });
 
-    const newSongs = await searchMock({
+    const newSongs = await search({
       offset: offset,
       limit: PAGE,
       q: query,
+      token,
     });
+
+    if (newSongs.length === 0) {
+      console.log('no songs found. there may be an error');
+    }
 
     this.setState({
       isFetching: false,
@@ -43,7 +54,21 @@ export default class App extends React.Component {
     });
   }
 
+  async refreshToken() {
+    this.setState({
+      isTokenFetching: true,
+    });
+
+    const newToken = await token();
+
+    this.setState({
+      token: newToken,
+      isTokenFetching: false,
+    });
+  }
+
   async componentDidMount() {
+    await this.refreshToken();
     await this.loadNextPage();
   }
 
