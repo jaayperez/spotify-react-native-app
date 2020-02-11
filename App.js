@@ -1,5 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ActivityIndicator,
+} from 'react-native';
+
 
 import Search from './src/Components/Search';
 import Listing from './src/Components/Listing';
@@ -50,19 +56,23 @@ export default class App extends React.Component {
   }
 
   render() {
-    const { songs } = this.state;
+    const { songs, isFetching } = this.state;
 
     return (
       <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <Search
-      onChange={text => this.handleSearchChange(text)}
-      />
-      <Listing
-      items={songs}
-      onEndReached={() => this.handleEndReached()}
-      />
-    </View>
+        <Text>Open up App.js to start working on your app!</Text>
+        <Search
+        onChange={text => this.handleSearchChange(text)}
+        />
+        {
+        (isFetching && songs.length === 0)
+        ? <ActivityIndicator />
+        : <Listing
+        items={songs}
+        onEndReached={() => this.handleEndReached()}
+        />
+        }
+      </View>
   );
 }
 
