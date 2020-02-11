@@ -1,10 +1,20 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
+import Search from './src/Components/Search';
+
+export default class App extends React.Component {
+  handleSearchChange(text) {
+    console.log('search text is', text);
+  }
+
+  render() {
+    return (
+      <View style={styles.container}>
       <Text>Open up App.js to start working on your app!</Text>
+      <Search
+      onChange={text => this.handleSearchChange(text)}
+      />
     </View>
   );
 }
