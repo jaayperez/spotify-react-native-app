@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Spotify App React Native",
+    "name": "Spotify React Native App",
     "slug": "mySpotifyReact",
     "privacy": "public",
     "sdkVersion": "36.0.0",
@@ -11,9 +11,7 @@
     ],
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
