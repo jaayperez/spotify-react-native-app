@@ -23,11 +23,11 @@ const styles = StyleSheet.create({
 });
 
 export default class Search extends Component {
-  constructor() {
+  constructor({ text }) {
     super();
 
     this.state = {
-      text: '',
+      text: text || '',
     };
   }
 
