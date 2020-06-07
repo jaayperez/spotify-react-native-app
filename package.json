@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "expo": "^37.0.11",
+    "logkitty": "^0.7.1",
     "minimist": "^1.2.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
