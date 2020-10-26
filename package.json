@@ -1,4 +1,8 @@
 {
+  "name": "spotify-react-native-app",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "start": "expo start",
@@ -7,18 +11,28 @@
     "web": "expo start --web",
     "eject": "expo eject"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jaayperez/spotify-react-native-app.git"
+  },
+  "keywords": [],
+  "author": "Justin Perez",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jaayperez/spotify-react-native-app/issues"
+  },
+  "homepage": "https://github.com/jaayperez/spotify-react-native-app#readme",
   "dependencies": {
-    "expo": "^37.0.11",
+    "expo": "^39.0.3",
     "logkitty": "^0.7.1",
     "minimist": "^1.2.5",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-36.0.0.tar.gz",
-    "react-native-web": "^0.12.2"
+    "react-native-web": "^0.14.4"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.6",
-    "babel-preset-expo": "^8.1.0"
-  },
-  "private": true
+    "@babel/core": "^7.12.3",
+    "babel-preset-expo": "^8.3.0"
+  }
 }
