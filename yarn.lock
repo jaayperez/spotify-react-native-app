@@ -2501,10 +2501,10 @@ expo-sqlite@~8.4.0:
     "@expo/websql" "^1.0.1"
     lodash "^4.17.15"
 
-expo@^39.0.4:
-  version "39.0.4"
-  resolved "https://registry.yarnpkg.com/expo/-/expo-39.0.4.tgz#320b7453ac055fc37c64942d5ba442f4e2781993"
-  integrity sha512-lyd7VSg0DG+I2CwWtOHwhmMwgANoqggqU1ooWRdO4KdWPYA8hWMMsLC2vBBBemKv3PPwxhl9hhzFxtjJ/MaR7g==
+expo@^39.0.5:
+  version "39.0.5"
+  resolved "https://registry.yarnpkg.com/expo/-/expo-39.0.5.tgz#d2a37a65859c8c5c1821a49012548bdf541a4c7f"
+  integrity sha512-uLywo0Gvx0SUz/Bso/2IMDeMr9Lvr4/4YB8yAYS3BW3872duFHKHVccKEqLzBN+q/5DuW5fmSNkOeQCThMFo/w==
   dependencies:
     "@babel/runtime" "^7.1.2"
     "@expo/vector-icons" "^10.0.2"
