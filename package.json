@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/jaayperez/spotify-react-native-app#readme",
   "dependencies": {
-    "expo": "^39.0.5",
+    "expo": "^40.0.0",
     "logkitty": "^0.7.1",
     "minimist": "^1.2.5",
     "react": "^17.0.1",
