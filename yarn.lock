@@ -5293,10 +5293,10 @@ react-native-safe-area-context@3.1.9:
   resolved "https://registry.yarnpkg.com/react-native-safe-area-context/-/react-native-safe-area-context-3.1.9.tgz#48864ea976b0fa57142a2cc523e1fd3314e7247e"
   integrity sha512-wmcGbdyE/vBSL5IjDPReoJUEqxkZsywZw5gPwsVUV1NBpw5eTIdnL6Y0uNKHE25Z661moxPHQz6kwAkYQyorxA==
 
-react-native-web@^0.15.5:
-  version "0.15.5"
-  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.15.5.tgz#6ad8d4553df080c9a9c30b63cffc7b41d0e076ec"
-  integrity sha512-SSXQfVJ8Zm5p633JM5QgkZ1BhZHqJEkRaSUa1BUzgzpMcqWX+XUFM0ZFwsRO5O9yd0wgi4yH89Da4qdoaCjoDw==
+react-native-web@^0.15.6:
+  version "0.15.6"
+  resolved "https://registry.yarnpkg.com/react-native-web/-/react-native-web-0.15.6.tgz#f549e1fb692f2401c0262293b3eb11b95a29a1d3"
+  integrity sha512-gT2ctvxR7ePGYX/Qq5jxxTaJmDh6kX0DVLVZHMR5oB3IQqaiSlDN0j8QEmsMIJkYcxvY1XcOgLuccKp3JknlJA==
   dependencies:
     array-find-index "^1.0.2"
     create-react-class "^15.7.0"
