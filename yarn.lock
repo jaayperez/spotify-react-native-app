@@ -2284,7 +2284,19 @@ babel-plugin-syntax-trailing-function-commas@^7.0.0-beta.0:
   resolved "https://registry.yarnpkg.com/babel-plugin-syntax-trailing-function-commas/-/babel-plugin-syntax-trailing-function-commas-7.0.0-beta.0.tgz#aa213c1435e2bffeb6fca842287ef534ad05d5cf"
   integrity sha512-Xj9XuRuz3nTSbaTXWv3itLOcxyF4oPD8douBBmj7U9BBC6nEBYfyOJYQMf/8PJAFotC62UY5dFfIGEPr7WswzQ==
 
-babel-preset-expo@^8.5.1, babel-preset-expo@~8.5.1:
+babel-preset-expo@^9.0.2:
+  version "9.0.2"
+  resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-9.0.2.tgz#018bafbe29c61491d55bf5c1b603534b54a13bf1"
+  integrity sha512-NKVichCkbmb+ZIJ4hvuxzX3PnvHUKT42NxYIYTsKAfHPUKuaSAawtpsmMThph6pUc0GUYcLvCRql8ZX5A1zYNw==
+  dependencies:
+    "@babel/plugin-proposal-decorators" "^7.12.9"
+    "@babel/plugin-transform-react-jsx" "^7.12.17"
+    "@babel/preset-env" "^7.12.9"
+    babel-plugin-module-resolver "^4.1.0"
+    babel-plugin-react-native-web "~0.17.1"
+    metro-react-native-babel-preset "~0.64.0"
+
+babel-preset-expo@~8.5.1:
   version "8.5.1"
   resolved "https://registry.yarnpkg.com/babel-preset-expo/-/babel-preset-expo-8.5.1.tgz#aac627a6c85b3c0904a226596c6243fac9f19491"
   integrity sha512-qQVG6Twn7tymODw8cH+85QtzFqcD0ckLWgVLC8pzRkwLKP5lIs5gtiYdoUsvhvyWWesSFR9VlhN0HE2Nu7WCWQ==
