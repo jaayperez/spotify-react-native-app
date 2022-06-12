@@ -33,6 +33,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.16.7",
-    "babel-preset-expo": "^9.0.2"
+    "babel-preset-expo": "^9.1.0"
   }
 }
