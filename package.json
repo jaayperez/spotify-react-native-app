@@ -32,7 +32,7 @@
     "react-native-web": "^0.18.10"
   },
   "devDependencies": {
-    "@babel/core": "^7.20.12",
+    "@babel/core": "^7.23.2",
     "babel-preset-expo": "^9.2.2"
   }
 }
